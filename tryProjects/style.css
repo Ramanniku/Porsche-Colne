@@ -1,0 +1,159 @@
+
+body {
+    font-family: inherit;
+  }
+
+
+              /*        Navbar              */
+  
+  .sidenav {
+    
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    text-decoration:none
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+.nav{
+     padding-top: 25px;
+}
+
+
+              /*        Slider              */
+
+.sliderImg{
+    height: 600px;
+}
+
+ .headingSlider{
+    font-size: 3rem;
+    justify-content: left;
+}
+.headingSlider:hover{
+    color: #d5001c;
+    cursor: pointer;
+} 
+.paraSlider{
+    font-size: 1.5rem;
+}
+ 
+
+     /*        Model the middle part              */
+
+
+.gallery{
+    width: 75%;
+    display: flex;
+    overflow-x: scroll;
+}
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 20px;
+    flex: none;
+}
+
+.gallery div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.3s;
+}
+
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-wrap{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: 10% auto;
+
+}
+
+#backBtn, #nextBtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+.gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.carModelBtn{
+    border: none;
+    background-color: #212121;
+    color: white;
+    padding: 13px 25px 13px 25px;
+}
+.carModelBtn:hover{
+    background-color:#d5001c ;
+}
+
+              /* <-- shopping Image container --> */
+.shoppingImgContainer{
+    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}
+
+.shoppingImg{
+
+    width: 100%;
+    
+
+
+}
+ .shoppingPara{
+    color: white;
+   
+ }
+
+ .arrowImg{
+    width: 30px;
+    height: 30px;
+   
+ }
+
+
+             /* Porsche Social Div */
+ 
